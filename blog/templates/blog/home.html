@@ -1,0 +1,44 @@
+{% extends "blog/bas.html" %}
+{% load static %}
+{% block content %}
+<style type="text/css">
+  #spartansSection {
+    height: 400px;
+    width: 100%;
+    background-color: #5F788a;
+    position: relative;
+}
+.spartansTitle {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+h1 {text-align: center;}
+/*.detail{
+  margin-right: 50px;
+  margin-left: 50px;
+}*/
+</style>
+
+<div class="container">
+<img src="{% static 'blog/img/bannr.jpg' %}" height="400px" class="d-block w-200" alt="...">
+</div>
+<div class="container">
+  <h1 class="mt-4">How we work</h1>
+  <div class="detail row mt-4">
+  <div class="col-4">
+    <h3>Browse our products</h3>
+    <p>You can view the products and choose according to your desire</p>
+  </div>
+  <div class="col-4">
+    <h3>Order and pay online</h3>
+    <p>Safe payment methods, by Visa, MasterCard or Cash on Delivery</p>
+  </div>
+  <div class="col-4">
+    <h3>Quick Delivery</h3>
+    <p>The delivery man will reach you quickly in your location</p>
+  </div>
+</div>
+  </div>
+{% include 'blog/footer.html ' %}
+{% endblock content %}

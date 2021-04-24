@@ -1,0 +1,40 @@
+{% extends "blog/bas.html" %}
+{% load static %}
+{% block content %}
+<style type="text/css">
+
+h1 {text-align: center;
+  color: white;
+}
+p {text-align: center;
+color: white;}
+.track{
+  background-color: #5f788a;
+  margin-top: -4px;
+}
+
+</style>
+<section class="track">
+<div class="container">
+<h1>ORDER TRACKING</h1>
+<br>
+<p>To track your order please enter your Order ID in the box below and press the "Track" button. This was given to you on your receipt and in the confirmation email you should have received.</p>
+<br>
+<form>
+  <div class="row">
+    <div class="col-4">
+      <input type="text" class="form-control" placeholder="Found in your order confirmation email.">
+    </div>
+    <div class="col-4">
+      <input type="text" class="form-control" placeholder="Email you used during checkout.">
+    </div>
+    <div class="col-4">
+      <button type="button" class="btn btn-success">TRACK</button>
+    </div>
+  </div>
+</form>
+<br><br>
+</div>
+</section>
+{% include 'blog/footer.html ' %}
+{% endblock content %}
